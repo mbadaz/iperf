@@ -38,6 +38,8 @@
 #include <string.h>
 #include <fcntl.h>
 #include <limits.h>
+#include <pthread.h>
+#include <poll.h>  // For net.c specifically
 
 #ifdef HAVE_SENDFILE
 #ifdef linux

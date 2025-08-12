@@ -32,6 +32,8 @@
 #include <stdarg.h>
 #include "iperf.h"
 #include "iperf_api.h"
+#include <pthread.h>
+#include <poll.h>  // For net.c specifically
 
 int gerror;
 

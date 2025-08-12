@@ -54,6 +54,8 @@
 #include <sched.h>
 #include <setjmp.h>
 #include <math.h>
+#include <pthread.h>
+#include <poll.h>  // For net.c specifically
 
 #if defined(HAVE_CPUSET_SETAFFINITY)
 #include <sys/param.h>

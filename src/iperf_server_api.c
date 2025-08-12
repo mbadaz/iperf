@@ -58,6 +58,8 @@
 #include "units.h"
 #include "iperf_util.h"
 #include "iperf_locale.h"
+#include <pthread.h>
+#include <poll.h>  // For net.c specifically
 
 #if defined(HAVE_TCP_CONGESTION)
 #if !defined(TCP_CA_NAME_MAX)
